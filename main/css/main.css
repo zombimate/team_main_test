@@ -1,0 +1,51 @@
+#main-page {
+  float: none;
+}
+
+#main-nav>a {
+  display: block;
+  float: left;
+  text-decoration-line: none;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 80px;
+  padding: 0 30px;
+}
+
+#main-nav>button {
+  text-decoration-line: none;
+}
+
+#main-nav>ul {
+  list-style: none;
+  float: right;
+}
+
+#main-nav>ul li {
+  float: left;
+  padding: 0 15px;
+  line-height: 60px;
+  color: #62772c;
+}
+
+
+.main-banner {
+  background: #62772c 10%, #c7d37f 50%, #f8f1e1 100%;
+  text-align: center;
+  margin-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 30px;
+  font-weight: 1500;
+  line-height:normal;
+  padding: 0 30px;
+}
+
+.main-car1, .main-car2, .main-car3 {
+  background: #c7d37f;
+  text-align: center;
+  font-size: 50px;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 500px;
+}
