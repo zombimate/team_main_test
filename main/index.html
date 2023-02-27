@@ -5,17 +5,35 @@
   <title>eolebeole</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <div id="main-page">
     <!-- 메인바 -->
     <nav id="main-nav">
-      <img class="main-logo" src="logo/bemeal-logo.png" alt="bemeal지도"><a href="index.html"></a></img>
+      <img class="main-logo" src="logo/test-bemeal-logo.png" alt="bemeal지도"><a href="index.html"></a></img>
       <ul>
-        <li><button><a href="login.html">로그인</a></button></li>
+        <li>
+          <button id="loginclick" data-toggle="modal" data-target="#loginModal">로그인</button>
+          
+          <!-- 부트스트랩 모달 -->
+          <div class="modal fade" id="loginModal" role="dialog">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="modal-title">로그인</h1>
+                      </div>
+                      <div class="modal-body"></div>
+                  </div>
+              </div>
+          </div>
+        </li>
         <li><button><a href="member.html">회원가입</a></button></li>
       </ul>
+      <div id="goingTop" onclick="window.scrollTo(0,0);"> ↑ </div>
     </nav>
 
     <!-- 첫장 -->
@@ -32,7 +50,7 @@
     </section>
 
     <!-- 두번째 창 -->
-    <div class="main-car1">
+    <div class=" ">
       <p> 설명 </p>
     </div>
 
@@ -40,12 +58,17 @@
     <div class="main-car2">
       <p> 설명 </p>
     </div>
-    
+
     <!-- 네번째 창-->
     <div class="main-car3">
       <p> 설명 </p>
     </div>
   </div>
+  <script>
+    $('#loginModal').on('shown.bs.modal', function () {
+      $('.modal-body').load('login.html');
+    });
+  </script>
 </body>
 
 </html>

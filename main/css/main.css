@@ -1,5 +1,6 @@
-#main-page {
-  float: none;
+.main-page, .main-banner, .main-car1, .main-car2, .main-car3, .main-car4 {
+  height:1000px;
+
 }
 
 #main-nav>a {
@@ -30,15 +31,15 @@
 
 
 .main-banner {
-  background: #62772c 10%, #c7d37f 50%, #f8f1e1 100%;
+  background: #f8f1e1;
   text-align: center;
-  margin-bottom: 0;
-  padding-left: 1em;
-  padding-right: 1em;
   font-size: 30px;
-  font-weight: 1500;
-  line-height:normal;
-  padding: 0 30px;
+  font-weight: 3000;
+}
+
+.main-banner>a1 {
+  font-size: 80px;
+
 }
 
 .main-car1, .main-car2, .main-car3 {
@@ -49,3 +50,22 @@
   padding-right: 1em;
   line-height: 500px;
 }
+
+#goingTop {
+  position: fixed;
+  left: 95%;
+  bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 60%;
+  border: none;
+  background-color: #62772c;
+  color: #ffffff;
+  font-size: 30px;
+  box-shadow: 0px 0px 5px #f8f1e1;
+  cursor: pointer;
+}
+
